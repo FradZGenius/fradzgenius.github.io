@@ -7,7 +7,9 @@ db.ref('msgs/').on('value',function(snapshot){
   msgDisplay.innerHtml = snapshot.value().msg
   
 })
-
+db.ref("test/wow").set({
+  "e":1
+})
 function postMessage(message){
   db.ref('msgs/' + Math.random().toString(36).substring(7) + usrname).set({
     "msg":message,
