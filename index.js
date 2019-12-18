@@ -10,7 +10,7 @@ db.ref('msgs/').on('value',function(snapshot){
 
 function postMessage(message){
   db.ref('msgs/' + Math.random().toString(36).substring(7) + usrname).set({
-		"msg":message,
+    "msg":message,
     "usr":usrname
-	})
+  })
 }
