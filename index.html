@@ -8,7 +8,9 @@
 
       <!-- TODO: Add SDKs for Firebase products that you want to use
            https://firebase.google.com/docs/web/setup#available-libraries -->
-
+    	<label for="msg">Enter a message</label>
+			<input id = "msgInput" type="text" name="msg" value="Mickey"><br>
+      <button id ="send" onclick="postMessage(msgInput.value)">Post</button>
       <script>
         // Your web app's Firebase configuration
         var firebaseConfig = {
@@ -26,3 +28,4 @@
     <script src="index.js"></script>
   </body>
 </html>
+  
